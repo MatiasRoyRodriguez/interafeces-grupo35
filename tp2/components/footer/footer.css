@@ -1,0 +1,10 @@
+.footer {
+    background-color: #332E55;
+    width: 1400px;
+    height: 800px;
+}
+
+.listas-container {
+    display: flex; /* Utiliza flexbox para colocar los divs en una fila */
+    justify-content: space-around; /* Espacia los divs equitativamente */
+}
