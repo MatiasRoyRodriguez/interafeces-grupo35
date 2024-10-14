@@ -2,9 +2,40 @@
     background-color: #332E55;
     width: 1400px;
     height: 800px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
 }
 
 .listas-container {
-    display: flex; /* Utiliza flexbox para colocar los divs en una fila */
-    justify-content: space-around; /* Espacia los divs equitativamente */
+    display: flex; 
+    justify-content: space-around; 
+    color: white;
+    
+}
+
+
+.footerEmail{
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: column; 
+    width: 300px; 
+    padding-left: 100px;
+    padding-top: 40px;
+    color: white;
+    
+}
+
+
+.input-email{
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+
+    
+    border: 2px solid #332E55; 
+    border-radius: 40px;
+
+    color: black;
 }
