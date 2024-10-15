@@ -1,0 +1,34 @@
+body{
+    background-color: #6D658D;
+}
+
+.contenedorRegister {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.ancorRegister{
+    text-decoration: none;
+    color: #332E55;
+    font-size: 16px;
+    font-weight: bold;
+}
+.buttonRegister {
+    padding: 10px 20px;
+    background-color: #332E55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

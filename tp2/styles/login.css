@@ -1,0 +1,46 @@
+.login{
+    background-color: #6D658D;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.input-email , .input-password{
+    box-sizing: border-box;
+
+    /* Borde personalizado */
+    border: 2px solid #332E55; /* Borde de 2px, color #332E55 */
+    border-radius: 40px; /* Esquinas redondeadas */
+
+    color: black;
+
+    width: 800px;   
+    height: 73px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.ancorRegister{
+    text-decoration: none;
+    color: #332E55;
+    font-size: 16px;
+    font-weight: bold;
+}
+.buttonLogin {
+    padding: 10px 20px;
+    background-color: #332E55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

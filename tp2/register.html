@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/register.css">
+
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+    <div class="contenedorRegister">
+        <form action="procesar-registro.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <p></p>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nickname">Nombre de Usuario:</label>
+            <p></p>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="edad">Edad:</label>
+            <p></p>
+            <input type="number" id="edad" name="edad" min="1" required>
+
+            <label for="email">Email:</label>
+            <p></p>
+            <input class="input-email" type="email" id="email" name="email" required placeholder="ejemplo@correo.com"><br>
+
+            <label for="password">Contraseña:</label>
+            <p></p>
+            <input class="input-password" type="password" id="password" name="password" required placeholder="Ingresa tu contraseña"><br>
+
+            <label for="repeat-password">Repetir Contraseña:</label>
+            <p></p>
+            <input class="input-password" type="password" id="repeat-password" name="repeat-password" required placeholder="Repite tu contraseña"><br>
+        </form>
+    </div>
+
+    <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO"></div>
+
+    <div class="contenedor">
+        <a class="ancorRegister" href="register.html">New here? Create account</a>
+        <button class="buttonRegister" >Register</button>
+    </div>
+    
+</body>
+</html>
