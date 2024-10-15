@@ -22,5 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
       loadComponent("mainCarrouselContainer", "mainCarousel");
       loadComponent("gameCard", "gameCard");
     }
-  }, 0); 
+  }, 50); 
 });
