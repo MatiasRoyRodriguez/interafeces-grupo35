@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaming Zone</title>
+    <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <h1>Gaming Zone</h1>
+    <div id="loaderContainer">
+      <div class="spinner"></div>
+      <p id="loadingText">Loading... 0%</p>
+    </div>
+    
     <div id="navbarContainer"></div>
 
     <main>
+      <div id="mainCarrouselContainer"></div>
     </main>
+    <section>
+      <div id="gameCard"></div>
+    </section>
 
     <div id="footerContainer"></div>
     <script src="scripts/componentLoader.js"></script>
+    <script src="scripts/loadHome.js"></script>
   </body>
 </html>

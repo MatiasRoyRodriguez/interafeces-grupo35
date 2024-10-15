@@ -1,16 +1,102 @@
 .navbar {
-  background-color: #333;
-  padding: 1rem;
-}
-
-.navbar ul {
-  list-style: none;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #50496d;
+  color: white;
+  min-height: 60px;
 }
 
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.burger {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.search-container {
+  position: relative;
+  width: 450px;
+}
+
+.search-container input {
+  padding: 5px 0px 5px 34px;
+  border: none;
+  height: 40px;
+  background: #f0f0f0;
+  width: 100%;
+  border-radius: 45px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  z-index: 99999;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.submenu.show {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.submenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submenu li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submenu li:hover {
+  background-color: #f0f0f0;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
 }

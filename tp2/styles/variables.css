@@ -1,1 +1,153 @@
- /* Archivo para colores y variables globales */
+/* Archivo para colores y variables globales */
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:slnt,wght@-14..14,100..1000&display=swap");
+
+* {
+  font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+  background-color: #ddd;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --mainBlue: #1b263b;
+  --mainBlue2: #050d1c;
+  --mainBlue3: #0f192c;
+  --mainBlue4: #3c4a5a;
+  --mainBlue5: #5f6b83;
+  --mainBlueLight: #17122a;
+  --mainBlueShadow: #0e1826;
+
+  --mainPurple: #231d3d;
+  --mainPurple2: #50496d;
+  --mainPurple3: #332e55;
+  --mainPurple4: #251c42;
+  --mainPurple5: #6d658d;
+  --mainPurpleLight: #443e68;
+  --mainPurpleShadow: #17122a;
+
+  --mainGreen: #163634;
+  --mainGreen2: #3c6160;
+  --mainGreen3: #3c6160;
+  --mainGreen4: #14403e;
+  --mainGreen5: #092925;
+  --mainGreen6: #4a7574;
+
+  --mainGreenLight: #2d625e;
+  --mainGreenShadow: #0c1e1c;
+}
+
+.btn {
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+  border: unset;
+  cursor: pointer;
+}
+
+.btn img {
+  max-width: 12px;
+  max-height: 12px;
+  vertical-align: middle;
+}
+
+.btn.btn--big img {
+  max-width: 24px;
+  max-height: 24px;
+  padding: 0px 7px 2px 3px;
+}
+
+.btn.btn--small img {
+  max-width: 12px;
+  max-height: 12px;
+  padding: 0px 7px 2px 3px;
+}
+
+.btn.btn--wishlist img {
+  max-width: 24px;
+  max-height: 24px;
+  color: white;
+  padding-right: 7px;
+  padding-bottom: 2px;
+}
+
+.btn.btn--big {
+  padding: 8px 50px;
+}
+
+.btn.btn--small {
+  font-size: 12px;
+  padding: 4px 24px;
+}
+
+.btn.btn--small-padding {
+  padding: 4px 2px;
+}
+
+.btn.btn--main {
+  background-color: var(--mainGreen6);
+  box-shadow: 8px 6px 29px rgba(45, 98, 94, 0.53);
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.btn.btn--main:hover {
+  background-color: var(--mainGreen2);
+}
+
+.btn.btn--main:hover img {
+  transform: translateX(-5px);
+  animation: move 0.8s ease infinite;
+}
+
+.btn.btn--wishlist {
+  background: unset;
+  box-shadow: unset;
+  border: unset;
+  transition: transform 0.5s ease-in-out;
+}
+
+.btn.btn--wishlist:hover {
+  transform: scale(1.1);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.main--text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.main--pricing {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
