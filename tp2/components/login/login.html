@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleLogin.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <a href="index.html">Ir a la principal</a>
+
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+
+    <form class="login">
+        <div class="Form">
+
+            <label for="email">Email:</label>
+            <p></p>
+            <input class="input-email" type="email" id="email" name="email" required placeholder="ejemplo@correo.com"><br>
+
+            <label for="password">Contraseña:</label>
+            <p></p>
+            <input class="input-password" type="password" id="password" name="password" required placeholder="Ingresa tu contraseña"><br>
+
+            <label for="repeat-password">Repetir Contraseña:</label>
+            <p></p>
+            <input class="input-password" type="password" id="repeat-password" name="repeat-password" required placeholder="Repite tu contraseña"><br>
+
+        </form>
+    
+        <div class="redes">
+            <p>redes</p>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO"></div>
+
+        <div class="contenedor">
+            <a class="ancorRegister" href="register.html">New here? Create account</a>
+            <button class="buttonLogin" >login</button>
+        </div>
+    
+</body>
+</html>
