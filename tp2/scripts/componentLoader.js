@@ -1,33 +1,52 @@
-'use strict';
+"use strict";
 
 const loadComponent = (containerId, componentPath) => {
   const baseComponentPath = "components";
   const baseComponentUrl =
     baseComponentPath + "/" + componentPath + "/" + componentPath;
 
-  // Carga el HTML del componente
+  // HTML component
   fetch(`${baseComponentUrl}.html`)
     .then((response) => response.text())
     .then((html) => {
       document.getElementById(containerId).innerHTML = html;
 
-      // Carga el CSS del componente
+      //CSS component
       const link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = `${baseComponentUrl}.css`;
       document.head.appendChild(link);
 
-      // Carga el JS del componente
+      // JS  component
       const script = document.createElement("script");
       script.src = `${baseComponentUrl}.js`;
       document.body.appendChild(script);
     })
     .catch((err) =>
-      console.error(`Error al cargar el componente ${componentPath}:`, err)
+      console.error(`Error load component ${componentPath}:`, err)
     );
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("navbarContainer", "navbar");
-  loadComponent("footerContainer", "footer");
-});
+const loadPage = (containerId, componentPath) => {
+  const baseComponentPath = "pages";
+  const baseComponentUrl = baseComponentPath + "/" + componentPath;
+
+  // page HTML
+  fetch(`${baseComponentUrl}.html`)
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById(containerId).innerHTML = html;
+
+      //  page CSS
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = `${baseComponentUrl}.css`;
+      document.head.appendChild(link);
+
+      //  page JS
+      const script = document.createElement("script");
+      script.src = `${baseComponentUrl}.js`;
+      document.body.appendChild(script);
+    })
+    .catch((err) => console.error(`Error load page ${componentPath}:`, err));
+};
