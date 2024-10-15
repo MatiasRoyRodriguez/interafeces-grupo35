@@ -1,0 +1,484 @@
+.gameScreen {
+  margin: 0px 20px;
+}
+
+.gameScreen h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 67px;
+  align-items: center;
+  color: #000000;
+}
+
+.gameScreen h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.gameScreen p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.gameScreen .breadcrumb {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  align-items: center;
+  color: #000000;
+}
+
+.gameScreen .help-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #3c6160;
+}
+
+.gameScreen .help-link:hover {
+  opacity: 0.5;
+}
+
+.gameScreen .main-container {
+  display: flex;
+  width: 100%;
+}
+
+.gameScreen .content {
+  width: 70%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.gameScreen .list-container {
+  width: 30%;
+  padding: 20px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+}
+
+.gameScreen .block-container {
+  margin-top: 20px;
+}
+
+.gameScreen .block {
+  width: 65%;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.gameScreen .category-rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.gameScreen .category-left {
+  display: flex;
+  align-items: center;
+}
+
+.gameScreen .category-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.gameScreen .category-right {
+  display: flex;
+  align-items: center;
+}
+
+.gameScreen .category-right span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.gameScreen .category-right .star {
+  font-size: 35px;
+  color: gold;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.gameScreen .game__images img {
+  width: 361px;
+  height: 175px;
+}
+
+.gameScreen .comments-section {
+  background-color: rgba(109, 101, 141, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.gameScreen .comments-block h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.gameScreen .comments-block p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.gameScreen .comments-block {
+  margin-top: 20px;
+}
+
+.gameScreen .comment-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.gameScreen .image-column {
+  width: 10%;
+  padding: 10px;
+}
+
+.gameScreen .comment-image {
+  width: 116px;
+  height: 116px;
+}
+
+.gameScreen .textarea-column {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.gameScreen .comment-textarea {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(109, 101, 141, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.gameScreen .comment-note {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.gameScreen .feedback-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.gameScreen .buttons {
+  display: flex;
+  cursor: pointer;
+}
+
+.gameScreen .buttons .like {
+  margin-right: 10px;
+}
+
+.gameScreen .like-icon,
+.gameScreen .dislike-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.gameScreen .post-review {
+  padding: 10px 20px;
+  background-color: #3c6160;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.gameScreen .post-review:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.gameScreen .post-review:hover {
+  opacity: 0.5;
+}
+
+.gameScreen .post-review:hover:after {
+  left: 120%;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.gameScreen .old-comments-section {
+  padding: 20px;
+}
+
+.gameScreen .old-comments-section h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.gameScreen .old-comments-columns {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.gameScreen .left-column {
+  width: 75%;
+  background-color: #6d658d;
+  padding: 15px;
+}
+
+.gameScreen .left-column h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.gameScreen .right-column {
+  width: 25%;
+  padding: 15px;
+  background-color: #a09cb8;
+}
+
+.gameScreen .old-comments-columns .large-green {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  color: #243f3d;
+  display: inline-block;
+  margin: 0px;
+}
+
+.gameScreen .large-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.gameScreen .sub-columns {
+  display: flex;
+}
+
+.gameScreen .first-sub-column {
+  width: 50%;
+  padding: 10px;
+}
+
+.gameScreen .first-sub-column h4 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.gameScreen .first-sub-column h4.light-green {
+  color: #4a7574;
+  margin-left: 10px;
+}
+
+.gameScreen .second-sub-column {
+  width: 50%;
+  padding: 10px;
+}
+
+.gameScreen .second-sub-column h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.gameScreen .comment-block {
+  background-color: rgba(109, 101, 141, 0.05);
+  padding: 10px;
+  display: flex;
+}
+
+.gameScreen .comment-left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.gameScreen .comment-left p:first-child {
+  font-size: 13px;
+}
+
+.gameScreen .comment-left p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: #000000;
+  margin: 1px;
+}
+
+.gameScreen .small-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.gameScreen .comment-right {
+  width: 70%;
+  padding-left: 10px;
+}
+
+.gameScreen .comment-header {
+  display: flex;
+  align-items: center;
+}
+
+.gameScreen .comment-right .header-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  display: block;
+}
+
+.gameScreen .comment-right .smaller-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: #000000;
+  display: block;
+}
+
+.gameScreen .star {
+  margin-left: auto;
+}
+
+.gameScreen .comment-right .small-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.gameScreen .comment-right p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.gameScreen .buttons {
+  margin-top: 10px;
+}
+
+.gameScreen .header {
+  display: flex;
+  align-items: center;
+}
+
+.gameScreen .like-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gameScreen .yes-button,
+.gameScreen .no-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gameScreen .no-button {
+  background-color: #f44336;
+}
+
+.gameScreen .dark-violet-background {
+  background-color: #6d658d;
+}
+
+.gameScreen .recent-comment {
+  padding: 20px;
+}
+
+.gameScreen .recent-comment .header span {
+  margin-right: 20px;
+}
+
+.gameScreen .recent-comment .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.gameScreen .recent-comment .comment {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.gameScreen .recent-comment small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: #000000;
+}
