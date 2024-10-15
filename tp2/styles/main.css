@@ -1,1 +1,43 @@
 /* Archivo CSS global (reset, temas, etc.) */
+
+#loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-top: 10px solid var(--mainGreen6);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loadingText {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
