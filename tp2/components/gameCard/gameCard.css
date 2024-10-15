@@ -1,0 +1,138 @@
+.gameCardCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cardsContainer {
+  display: flex;
+  width: 1040px;
+  /* transition: transform 0.5s ease; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  background: #222222;
+  border-radius: 8px;
+  width: 300px;
+  height: 276px;
+  margin: 15px;
+  color: white;
+  transition: transform 0.3s ease;
+  min-width: 300px;
+  user-select: none;
+  pointer-events: auto;
+  border-radius: 10px;
+}
+.game-card__body {
+  padding: 5px 10px;
+}
+.card img {
+  width: 100%;
+  height: 147px;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -ms-user-select: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+  margin: unset;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #ffffff;
+  margin: unset;
+}
+
+.card .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-wishlist {
+  background-color: #ff7f50;
+  color: white;
+}
+
+.buy-now {
+  background-color: #28a745;
+  color: white;
+}
+
+.play-free {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 99;
+}
+
+.game-category {
+  display: flex;
+  align-items: center;
+  max-width: 82%;
+  margin: 25px auto 5px auto;
+}
+
+.game-category h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.category-title {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+.category-icon {
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+.card.cardFree {
+  position: relative;
+  overflow: hidden;
+}
+
+.ribbon {
+  position: absolute;
+  top: 47px;
+  right: -29px;
+  background-color: #3c6160;
+  color: white;
+  padding: 12px 64px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  transform: rotate(32deg);
+  transform-origin: top right;
+  text-transform: uppercase;
+}
