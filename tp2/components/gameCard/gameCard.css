@@ -1,20 +1,44 @@
-.gameCardCarousel {
+.carrousel-block__container {
+  position: relative;
+  padding: 0px 40px;
+}
+
+.carrousel-block__category {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 84%;
-  margin: 0 auto;
+  max-width: 82%;
+  margin: 25px 14px;
+}
+
+.carrousel-block__category .category-icon {
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+.carrousel-block__category h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  margin: 0;
+  color: #000000;
+}
+
+.carrousel-block__carrousel {
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
-.cardsContainer {
+.cards__container {
   display: flex;
   width: 1040px;
-  /* transition: transform 0.5s ease; */
   transition: transform 0.5s ease-in-out;
 }
 
-.card {
+.cards__container .card {
   background: #222222;
   border-radius: 8px;
   width: 300px;
@@ -27,9 +51,11 @@
   pointer-events: auto;
   border-radius: 10px;
 }
-.game-card__body {
+
+.card__body {
   padding: 5px 10px;
 }
+
 .card img {
   width: 100%;
   height: 147px;
@@ -42,6 +68,9 @@
 
 .card h3 {
   margin: unset;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card .price {
@@ -54,65 +83,6 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-}
-
-.button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.add-to-wishlist {
-  background-color: #ff7f50;
-  color: white;
-}
-
-.buy-now {
-  background-color: #28a745;
-  color: white;
-}
-
-.play-free {
-  background-color: #007bff;
-  color: white;
-}
-
-.nav-button {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 99;
-}
-
-.game-category {
-  display: flex;
-  align-items: center;
-  max-width: 82%;
-  margin: 25px auto 5px auto;
-}
-
-.game-category h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 43px;
-  color: #000000;
-}
-
-.category-title {
-  font-size: 24px;
-  color: #fff;
-  margin: 0;
-}
-
-.category-icon {
-  height: 33px;
-  width: 33px;
-  margin-right: 5px;
-  vertical-align: sub;
 }
 
 .card.cardFree {
@@ -135,4 +105,22 @@
   transform: rotate(32deg);
   transform-origin: top right;
   text-transform: uppercase;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #333;
+}
+
+.arrow.left {
+  position: absolute;
+  left: 10px;
+}
+
+.arrow.right {
+  position: absolute;
+  right: 10px;
 }
