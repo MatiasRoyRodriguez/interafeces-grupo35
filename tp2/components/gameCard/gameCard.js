@@ -49,7 +49,7 @@ const gamesData = [
   },
   {
     category: "Adventure Games",
-    icon: "./assets/images/categoryIcons/icon-adventure.png",
+    icon: "./assets/images/categoryIcons/Icon-adventure.png",
     games: [
       {
         title: "Baldur's Gate 3",
@@ -97,7 +97,7 @@ const gamesData = [
   },
   {
     category: "Action Games",
-    icon: "./assets/images/categoryIcons/icon-swords.png",
+    icon: "./assets/images/categoryIcons/Icon-swords.png",
     games: [
       {
         title: "Grand Theft Auto VI",
@@ -145,7 +145,7 @@ const gamesData = [
   },
   {
     category: "Strategy Games",
-    icon: "./assets/images/categoryIcons/icon-strategy.png",
+    icon: "./assets/images/categoryIcons/Icon-strategy.png",
     games: [
       {
         title: "The Precinct",
