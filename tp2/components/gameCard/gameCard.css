@@ -50,7 +50,11 @@
   user-select: none;
   border-radius: 10px;
 }
-
+@media (max-width: 576px) {
+  .cards__container .card{
+    min-width: 270px;
+  }
+}
 .card__body {
   padding: 5px 10px;
 }

@@ -159,21 +159,25 @@ h1 {
   padding-right: 15px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .container {
     max-width: 540px;
+    padding: unset;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    padding: unset;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
