@@ -23,7 +23,7 @@
 }
 
 .carousel-slide.skew {
-  transform:  skew(-5deg);
+  transform: skew(-5deg);
 }
 
 .carousel-slide img {
@@ -128,4 +128,32 @@
 
 .buttons__container {
   margin-top: 55px;
+}
+
+@media (max-width: 480px) {
+  .carousel-control {
+    font-size: 3rem;
+    top: 80px;
+  }
+
+  .carousel-caption {
+    font-size: 14px;
+    left: 50%;
+    width: 330px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .buttons__container {
+    margin-top: 10px;
+  }
+  .carousel-slide img {
+    height: 500px;
+  }
 }
