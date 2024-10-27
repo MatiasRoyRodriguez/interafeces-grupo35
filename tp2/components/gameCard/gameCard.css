@@ -48,7 +48,6 @@
   transition: transform 0.3s ease;
   min-width: 300px;
   user-select: none;
-  pointer-events: auto;
   border-radius: 10px;
 }
 
