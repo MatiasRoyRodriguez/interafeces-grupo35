@@ -15,7 +15,11 @@
 .logo {
   margin-left: 10%;
 }
-
+@media (max-width: 576px) {
+  .logo {
+    margin: 0px 10%;
+  }
+}
 .logo img {
   height: 60px;
 }
@@ -26,6 +30,12 @@
   justify-content: center;
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  .search-container {
+    display: none;
+  }
 }
 
 .search-wrapper {
@@ -89,6 +99,11 @@
   opacity: 1;
 }
 
+@media (max-width: 576px) {
+  .submenu.show {
+    width: 100vw;
+  }
+}
 .submenu ul {
   list-style: none;
   padding: 0;
