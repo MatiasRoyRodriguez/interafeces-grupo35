@@ -14,18 +14,23 @@
 <body>
 
     <div class="contenedorRegister">
+
+        <div class="logo">
+            <img src="./assets/images/icons/logo.png" alt="Gaming Zone Logo">
+        </div>
+
         <form action="procesar-registro.php" method="POST">
             <label for="nombre">Nombre:</label>
             <p></p>
-            <input type="text" id="nombre" name="nombre" required>
+            <input class="input-dato" type="text" id="nombre" name="nombre" required>
 
             <label for="nickname">Nombre de Usuario:</label>
             <p></p>
-            <input type="text" id="nickname" name="nickname" required>
+            <input class="input-dato" type="text" id="nickname" name="nickname" required>
 
             <label for="edad">Edad:</label>
             <p></p>
-            <input type="number" id="edad" name="edad" min="1" required>
+            <input class="input-dato" type="number" id="edad" name="edad" min="1" required>
 
             <label for="email">Email:</label>
             <p></p>
@@ -39,13 +44,13 @@
             <p></p>
             <input class="input-password" type="password" id="repeat-password" name="repeat-password" required placeholder="Repite tu contraseña"><br>
         </form>
-    </div>
 
-    <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO"></div>
+        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO"></div>
 
-    <div class="contenedor">
-        <a class="ancorRegister" href="register.html">New here? Create account</a>
-        <button class="buttonRegister" >Register</button>
+        <div class="contenedor">
+            <a class="ancorRegister" href="register.html">New here? Create account</a>
+            <button class="buttonRegister" >Register</button>
+        </div>
     </div>
     
 </body>

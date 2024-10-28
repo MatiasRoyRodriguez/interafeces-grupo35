@@ -1,9 +1,15 @@
-.login{
+.contenido{
+    width: 800px;
     background-color: #6D658D;
-
+    height: 100%;
 }
 
-form{
+.logo{
+    padding-left: 46%;
+}
+
+
+.login{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -22,13 +28,15 @@ form{
 
     color: black;
 
-    width: 800px;   
+    width: 500px;   
     height: 73px;
 }
 
 .contenedor{
     display: flex;
     justify-content: space-between;
+    width: 50%;
+    padding-left: 25%;
 }
 .ancorRegister{
     text-decoration: none;
@@ -44,3 +52,38 @@ form{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.redes{
+    padding-left: 46%;
+    height: 100%;
+}
+
+.logoRed{
+    height: 48px;
+    width: 48px;
+}
+
+.g-recaptcha{
+    padding-left: 30%;
+}
+
+@media (max-width: 576px) {
+    .contenido{
+        width: 100%;
+    }
+    .input-email , .input-password{
+        width: 100%;
+    }
+    .logo{
+        padding-left: 42%;
+    }
+
+    .redes{
+        padding-left: 40%;
+        height: 100%;
+    }
+    .g-recaptcha{
+        padding-left: 20%;
+    }
+
+  }

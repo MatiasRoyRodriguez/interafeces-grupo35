@@ -1,11 +1,24 @@
-body{
-    background-color: #6D658D;
-}
 
 .contenedorRegister {
+    background-color: #6D658D;
+    height: 100%;
+    
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */   
+}
+
+.input-email , .input-password , .input-dato{
+    box-sizing: border-box;
+
+    /* Borde personalizado */
+    border: 2px solid #332E55; /* Borde de 2px, color #332E55 */
+    border-radius: 40px; /* Esquinas redondeadas */
+
+    color: black;
+
+    width: 500px;   
+    height: 73px;
 }
 
 form{
