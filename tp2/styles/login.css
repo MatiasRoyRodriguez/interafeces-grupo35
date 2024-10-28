@@ -2,6 +2,7 @@
     width: 800px;
     background-color: #6D658D;
     height: 100%;
+    margin-left: 20%;
 }
 
 .logo{
@@ -70,6 +71,7 @@
 @media (max-width: 576px) {
     .contenido{
         width: 100%;
+        margin-left: 0%;
     }
     .input-email , .input-password{
         width: 100%;
@@ -86,4 +88,4 @@
         padding-left: 20%;
     }
 
-  }
+}

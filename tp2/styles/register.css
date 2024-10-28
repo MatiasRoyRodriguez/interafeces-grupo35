@@ -1,11 +1,13 @@
 
 .contenedorRegister {
+    width: 800px;
     background-color: #6D658D;
     height: 100%;
-    
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */   
+    margin-left: 20%;
+}
+
+.logo{
+    padding-left: 46%;
 }
 
 .input-email , .input-password , .input-dato{
@@ -19,6 +21,8 @@
 
     width: 500px;   
     height: 73px;
+
+    margin-left: 150px;
 }
 
 form{
@@ -44,4 +48,36 @@ form{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.g-recaptcha{
+    padding-left: 30%;
+    padding-top: 10px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 30px;
+}
+
+@media (max-width: 576px) {
+    .contenedorRegister{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .input-email , .input-password , .input-dato{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .logo{
+        padding-left: 42%;
+    }
+    .g-recaptcha{
+        padding-left: 5%;
+    }
+
 }
