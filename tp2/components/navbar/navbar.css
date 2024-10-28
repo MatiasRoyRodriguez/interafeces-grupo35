@@ -1,8 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 40px;
   background-color: #50496d;
   color: white;
   min-height: 60px;
@@ -13,13 +12,36 @@
   font-size: 24px;
 }
 
+.logo {
+  margin-left: 10%;
+}
+@media (max-width: 576px) {
+  .logo {
+    margin: 0px 10%;
+  }
+}
 .logo img {
   height: 60px;
 }
 
 .search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 450px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .search-container {
+    display: none;
+  }
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
 }
 
 .search-container input {
@@ -34,15 +56,15 @@
 .search-btn {
   position: absolute;
   top: 50%;
-  right: 10px;
+  left: 85%;
   transform: translateY(-50%);
   border: none;
   background: transparent;
   color: #333;
   cursor: pointer;
   font-size: 18px;
+  padding: 0;
 }
-
 .icons {
   display: flex;
   gap: 15px;
@@ -63,12 +85,12 @@
   position: absolute;
   background-color: white;
   color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-top: 50px;
+  box-shadow: 7px 5px 2px rgba(80, 73, 109, 0.9);
   z-index: 99999;
   transform: translateY(-10px);
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
+  width: 150px;
 }
 
 .submenu.show {
@@ -77,6 +99,11 @@
   opacity: 1;
 }
 
+@media (max-width: 576px) {
+  .submenu.show {
+    width: 100vw;
+  }
+}
 .submenu ul {
   list-style: none;
   padding: 0;
@@ -86,6 +113,7 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s;
 }

@@ -89,14 +89,12 @@ const slides = document.querySelectorAll(".carousel-slide");
 const dots = document.querySelectorAll(".dot");
 let currentSlide = 0;
 
-
-
 const showSlide = (index) => {
   // Handle wrapping of slides
   if (index >= slides.length) currentSlide = 0;
   else if (index < 0) currentSlide = slides.length - 1;
   else currentSlide = index;
-
+  slides[currentSlide].classList.add("skew");
   // Move the slides container
   const offset = -currentSlide * 100;
   document.querySelector(
@@ -106,14 +104,20 @@ const showSlide = (index) => {
   // Update active slide class
   slides.forEach((slide, i) => {
     slide.classList.remove("active");
+    slide.classList.remove("skew"); 
     if (i === currentSlide) {
       slide.classList.add("active");
+      slide.classList.add("skew");
     }
   });
 
   // Update active dot
   dots.forEach((dot) => dot.classList.remove("active"));
   dots[currentSlide].classList.add("active");
+
+  setTimeout(() => {
+    slides[currentSlide].classList.remove("skew");
+  }, 500);
 };
 
 showSlide(currentSlide);
