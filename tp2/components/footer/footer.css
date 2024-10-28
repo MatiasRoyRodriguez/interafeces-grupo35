@@ -10,6 +10,7 @@
     justify-content: space-around; 
     color: white;
     
+    
 }
 
 
@@ -49,4 +50,38 @@
     border-radius: 40px;
 
     color: black;
+}
+
+.lista-enlaces{
+    list-style-type: none;
+}
+
+.input-con-boton {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-email {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton-icono {
+    position: absolute;
+    right: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.boton-icono img {
+    width: 20px; 
+    height: 20px;
 }
